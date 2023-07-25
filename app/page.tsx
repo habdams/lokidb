@@ -33,7 +33,7 @@ export default async function Home() {
             {data.results.map((movie) => (
               <div
                 className="flex flex-col overview-hidden rounded-lg border bg-white"
-                key={movie.id + movie.ti}
+                key={movie.id}
               >
                 <Link
                   className="group relative block h-48 overflow-hidden bg-gray-100 md:h-64"
