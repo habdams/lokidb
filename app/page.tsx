@@ -20,7 +20,6 @@ async function getData() {
 export default async function Home() {
   const data: Trending = await getData();
 
-  console.log(data);
   return (
     <div className="bg-white py-6 sm:py-8 lg:py-12">
       <div className="mx-auto max-w-screen px-4 md:px-8">
