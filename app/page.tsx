@@ -31,7 +31,10 @@ export default async function Home() {
 
           <div className="grid gap-4 sm:grid-cols-2 md:gap-6 lg-grid-cols-3 xl:grid-cols-4 xl:gap-8">
             {data.results.map((movie) => (
-              <div className="flex flex-col overview-hidden rounded-lg border bg-white">
+              <div
+                className="flex flex-col overview-hidden rounded-lg border bg-white"
+                key={movie.id + movie.ti}
+              >
                 <Link
                   className="group relative block h-48 overflow-hidden bg-gray-100 md:h-64"
                   href={`/movie/${movie.id}`}
